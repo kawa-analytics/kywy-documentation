@@ -34,7 +34,7 @@ want to use KYWY for data analytics workloads, any user profile will work.
 
 Run the following command in the venv of your choice:
 
-`pip install kywy`
+`pip install kywy>=0.18.23`
 
 You can then explore the content through jupyter-lab.
 KYWY requires Python 3.10 or higher to run.
