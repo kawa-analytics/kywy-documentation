@@ -61,7 +61,7 @@ This API has the following features:
 - Configuration of primary keys and partitioning
 
 
-Please refer to this [Notebook](./blob/main/01_load_data_notebook.ipynb) for a detailed documentation and examples.
+Please refer to this [Notebook](./01_load_data_notebook.ipynb) for a detailed documentation and examples.
 
 
 ### 2.b The Computation API
