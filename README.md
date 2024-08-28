@@ -66,4 +66,31 @@ Please refer to this [Notebook](./01_load_data_notebook.ipynb) for a detailed do
 
 ### 2.b The Computation API
 
+The computation API allows you to send computation queries to KAWA using a syntax similar to Spark or Snowpark.
+It was built to work with any data warehouse. 
+It lets you compose complex workloads to be executed on the warehouse. In that way, only the necessary data will be loaded
+in the memory of your Python runtime as a pandas dataframe for further manipulation.
 
+It exposes operators such as:
+- Grouping
+- Sampling
+- Filtering (Both at row and group level)
+- Aggregating
+- Sorting
+- Limiting
+- Arithmetic, logic etc operations both on row and group levels
+- ...
+
+Please refer to this [Notebook](./02_compute_notebook.ipynb) for a detailed documentation and examples.
+
+Another [Notebook](./03_superstore_example_notebook.ipynb) illustrates a simple usecase using this API.
+
+
+
+### 2.c The Administration API
+
+This API lets you administrate your KAWA instance through Python code.
+It exposes methods to manage your users, the activated features,
+etc...
+
+Please refer to this [Notebook](./04_kawa_administration_notebook.ipynb) for details.
