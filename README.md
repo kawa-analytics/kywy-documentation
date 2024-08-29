@@ -49,27 +49,27 @@ KYWY requires Python 3.10 or higher to run.
 
 ### 2.a The Data Loading API
 
-The data loading API lets you send data to KAWA from your Python runtime.
-One of its main objective is to let users write their own data loading logic to connect 
-KAWA to internal APIs, custom file directory structures, in-house systems etc...
+The data loading API lets you push data to KAWA from your Python runtime.
+One of its main objective it to let users push data to KAWA from any internal APIs, custom file directory structures, in-house systems etc... 
+Those loads can also be scheduled using KAWA advanced scheduler.
 
 It supports both the pandas dataframe and the arrow tables for better performances.
 
 This API has the following features:
-- Create a datasource in KAWA
-- Send panda dataframes or arrow tables to KAWA
+- Create and Update a datasource in KAWA
+- Stream panda dataframes or arrow tables to KAWA
 - Configuration of primary keys and partitioning
-
 
 Please refer to this [Notebook](./01_load_data_notebook.ipynb) for a detailed documentation and examples.
 
 
-### 2.b The Computation API
+### 2.b The Query API
 
-The computation API allows you to send computation queries to KAWA using a syntax similar to Spark or Snowpark.
+The query API allows you to send computation queries to KAWA using a syntax similar to Spark or Snowpark.
 It was built to work with any data warehouse. 
-It lets you compose complex workloads to be executed on the warehouse. In that way, only the necessary data will be loaded
-in the memory of your Python runtime as a pandas dataframe for further manipulation.
+It lets you compose complex workloads to be executed on the warehouse (In order to benefit from the data warehouse scalibility and performances). 
+In that way, only the necessary data will be loaded
+in the memory of your Python runtime (Jupyter notebook, etc) as a pandas dataframe for further manipulation.
 
 It exposes operators such as:
 - Grouping
