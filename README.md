@@ -60,7 +60,7 @@ This API has the following features:
 - Stream panda dataframes or arrow tables to KAWA
 - Configuration of primary keys and partitioning
 
-Please refer to this [Notebook](./01_load_data_notebook.ipynb) for a detailed documentation and examples.
+Please refer to this [Notebook](./notebooks/data-operations/01_load_data_notebook.ipynb) for a detailed documentation and examples.
 
 
 ### 2.b The Query API
@@ -81,9 +81,9 @@ It exposes operators such as:
 - Arithmetic, logic etc operations both on row and group levels
 - ...
 
-Please refer to this [Notebook](./02_compute_notebook.ipynb) for a detailed documentation and examples.
+Please refer to this [Notebook](./notebooks/data-operations/02_compute_notebook.ipynb) for a detailed documentation and examples.
 
-Another [Notebook](./03_superstore_example_notebook.ipynb) illustrates a simple usecase using this API.
+Another [Notebook](./notebooks/data-operations/03_superstore_example_notebook.ipynb) illustrates a simple usecase using this API.
 
 
 
@@ -93,4 +93,4 @@ This API lets you administrate your KAWA instance through Python code.
 It exposes methods to manage your users, the activated features,
 etc...
 
-Please refer to this [Notebook](./04_kawa_administration_notebook.ipynb) for details.
+Please refer to this [Notebook](./notebooks/administration/01_kawa_administration_notebook.ipynb) for details.
