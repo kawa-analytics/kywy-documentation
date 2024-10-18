@@ -35,6 +35,15 @@ In order to obtain a valid `KAWA_API_KEY`, login into your KAWA instance, and re
 want to use KYWY for data analytics workloads, any user profile will work.
 
 
+__Alternatively,__ instead of using a .env file, you can set the following environment variables:
+
+```bash
+export KAWA_API_URL=https://wayne.kawa.ai
+export KAWA_API_KEY=****
+export KAWA_WORKSPACE=1
+```
+
+
 ### 1.b Install the kywy package
 
 Run the following command in the venv of your choice:
