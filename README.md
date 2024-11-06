@@ -48,7 +48,7 @@ export KAWA_WORKSPACE=1
 
 Run the following command in the venv of your choice:
 
-`pip install kywy>=0.18.23`
+`pip install kywy>=0.19.0`
 
 You can then explore the content through jupyter-lab.
 KYWY requires Python 3.10 or higher to run.
